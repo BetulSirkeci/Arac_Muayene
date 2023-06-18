@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Arac_Muayene.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Araç Muayene Randevu Sistemi</title>
+    <link href="master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+            <div class="topnav">
+  <a href="randevual.aspx">Randevu Al</a>
+  <a href="randevusil.aspx">Randevu İptal</a>
+  <a href="randevuguncelle.aspx">Randevu Güncelle</a>
+  <a href="randevusorgula.aspx">Randevu Sorgula</a>
+                <div class="logo">
+                     <asp:Label Text="ARAC MUAYENE" Style="float:right; padding:5px 20px 20px 20px; font-family:AIGDT; font-size:30px;" ID="logo" Font-Size="X-Large" ForeColor="White" runat="server" /> 
+                </div>
+</div>
+         <div class="content">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+             </asp:ContentPlaceHolder>  </div>
+                       
+                
+            
+       
+
+            
+        
+    </form>
+</body>
+</html>
